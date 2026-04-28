@@ -39,6 +39,10 @@ function App() {
     setCurrentUser(currentUserObj);
   }
 
+  function setNewAccount() {
+
+  }
+
   return (
     <div className="container my-5">
       <div className="row">
@@ -46,7 +50,7 @@ function App() {
           <UsersPanel users={users} chooseUser={chooseUser} />
         </div>
         <div className="col-12 col-md-6">
-          <SimpleUserForm currentUser={currentUser} />
+          <SimpleUserForm currentUser={currentUser} setNewAccount={setNewAccount} />
         </div>
       </div>
     </div>
